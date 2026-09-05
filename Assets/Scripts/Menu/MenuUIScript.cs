@@ -9,6 +9,7 @@ public class MenuUIScript : MonoBehaviour
 {
     public void StartNew()
     {
+        // TODO: check if player has name
         SceneManager.LoadScene(1);
     }
 
@@ -19,5 +20,10 @@ public class MenuUIScript : MonoBehaviour
         #endif
 
         Application.Quit();
+    }
+
+    public void Options()
+    {
+        SceneManager.LoadScene(2);
     }
 }
